@@ -9,6 +9,7 @@ module.exports = function(grunt) {
         'my-task': {
             'my-target': {
                 options: {
+                    // This will not be usable when you access it from `this.options()` in a task.
                     promise: q('hello world')
                 }
             }
@@ -17,6 +18,8 @@ module.exports = function(grunt) {
         'my-task-workaround': {
             'my-target': {
                 options: {
+                    // Wrapping the promise in a function will prevent grunt from mangling it, although of course
+                    // it defers when you are able to begin the async operation.
                     promiseFn: function() {
                         return q('hello workaround');
                     }
