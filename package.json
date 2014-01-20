@@ -1,0 +1,27 @@
+{
+  "name": "debug-grunt-promise",
+  "version": "0.0.0",
+  "description": "demo of an issue with grunt config and promises",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NickHeiner/debug-grunt-promise"
+  },
+  "keywords": [
+    "grunt",
+    "q"
+  ],
+  "author": "Nick Heiner <nth23@cornell.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NickHeiner/debug-grunt-promise/issues"
+  },
+  "homepage": "https://github.com/NickHeiner/debug-grunt-promise",
+  "devDependencies": {
+    "q": "~1.0.0",
+    "grunt": "~0.4.2"
+  }
+}
